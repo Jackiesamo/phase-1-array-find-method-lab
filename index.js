@@ -1,4 +1,5 @@
-clearfunction superbowlWin(record) {
-    const win = record.find(game => game.result === "W");
-    return win ? win.year : undefined;
-}
+// code your solution here
+superbowlWin = (record) => {
+    const result = record.find( record => record.result === "W" );
+    return !!result ? result.year : undefined;
+  }
